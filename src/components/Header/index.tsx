@@ -1,114 +1,44 @@
 "use client";
+import Image from "next/image";
 // import LogoLight from "@/assets/images/logo-light.png";
-import Link from "next/link";
 import { useState } from "react";
+import logo from "@/assets/images/wizardLogo.png";
 export default function Header() {
   const [isOpen, setMenu] = useState(true);
   const toggleMenu = () => {
     setMenu(!isOpen);
   };
   return (
-    <nav className="navbar bg-black" id="navbar">
-      <div className="container flex flex-wrap items-center justify-end">
-        <a className="navbar-brand text-white" href="index.html">
-          <span className="inline-block dark:hidden">
-            {/* <Image src={LogoDark} className="l-dark" alt="" />
-                        <Image src={LogoLight} className="l-light" alt="" /> */}
-            img
-          </span>
-          {/* <Image
-                        src={LogoLight}
-                        className="hidden dark:inline-block"
-                        alt=""
-                    /> */}
-          img
-        </a>
-        <div>
-          <Link href={"/"}>
-            <span className="nav-link">Home</span>
-          </Link>
-          <Link href={"/"}>
-            <span className="nav-link">About Us</span>
-          </Link>
-          <Link href={"/"}>
-            <span className="nav-link">Contact Us</span>
-          </Link>
+    <>
+      <div className="flex items-center justify-between pl-4 sm:pl-10 pr-4 sm:pr-10  bg-black text-white ">
+        <div className="flex items-center gap-5 text-[14px] xl:text-[16px] ">
+          <div>
+            <Image
+              alt="image"
+              className="w-[100px] sm:w-[150px] xl:w-[198px]"
+              src={logo}
+            />
+          </div>
+          <div className=" !hidden lg:!flex items-center gap-5 ">
+            <div className="border h-5 border-[#404040]"></div>
+            <div className="text-[#787878] font-bold">
+              Step into Secure Connectivity with Network Wizard!
+            </div>
+          </div>
         </div>
+        <div className="flex items-center gap-5 font-bold text-[12px] xl:text-[14px]">
+          <div className="!hidden lg:!flex gap-5">
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Contact Us</div>
+            <div className="border h-5 border-[#404040]"></div>
+          </div>
 
-        {/* <div className="nav-icons flex items-center lg_992:order-2 ms-auto">
-                    <ul className="list-none menu-social mb-0">
-                        <li className="inline ms-1">
-                            <Link href="#">
-                                <span className="login-btn-primary">
-                                    <span className="btn btn-sm btn-icon rounded-full bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white">
-                                        <i className="uil uil-github"></i>
-                                    </span>
-                                </span>
-                                <span className="login-btn-light">
-                                    <span className="btn btn-sm btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700">
-                                        <i className="uil uil-github"></i>
-                                    </span>
-                                </span>
-                            </Link>
-                        </li>
-                        <li className="inline ms-1">
-                            <Link href="#">
-                                <span className="login-btn-primary">
-                                    <span className="btn btn-sm btn-icon rounded-full bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white">
-                                        <i className="uil uil-twitter"></i>
-                                    </span>
-                                </span>
-                                <span className="login-btn-light">
-                                    <span className="btn btn-sm btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700">
-                                        <i className="uil uil-twitter"></i>
-                                    </span>
-                                </span>
-                            </Link>
-                        </li>
-                        <li className="inline ms-1">
-                            <Link href="#">
-                                <span className="login-btn-primary">
-                                    <span className="btn btn-sm btn-icon rounded-full bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white">
-                                        <i className="uil uil-instagram"></i>
-                                    </span>
-                                </span>
-                                <span className="login-btn-light">
-                                    <span className="btn btn-sm btn-icon rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700">
-                                        <i className="uil uil-instagram"></i>
-                                    </span>
-                                </span>
-                            </Link>
-                        </li>
-                    </ul>
-                    <button
-                        type="button"
-                        className="collapse-btn inline-flex items-center ms-3 text-dark dark:text-white lg_992:hidden"
-                        onClick={toggleMenu}
-                    >
-                        <span className="sr-only">Navigation Menu</span>
-                        <i >menu</i>
-                    </button>
-                </div> */}
-
-        <div
-          className={`${
-            isOpen === true ? "hidden" : "block"
-          } navigation lg_992:order-1 lg_992:flex`}
-          id="menu-collapse"
-        >
-          <ul className="navbar-nav nav-light" id="navbar-navlist">
-            <Link href={"/"}>
-              <span className="nav-link">Home</span>
-            </Link>
-            <Link href={"/"}>
-              <span className="nav-link">About Us</span>
-            </Link>
-            <Link href={"/"}>
-              <span className="nav-link">Contact Us</span>
-            </Link>
-          </ul>
+          <div className="bg-[#1B8FDE] hover:bg-[#71ACD4] px-3 py-2 text-[10px] sm:text-[14px] rounded-2xl">
+            Call Us: +1(416)802-2906
+          </div>
         </div>
       </div>
-    </nav>
+    </>
   );
 }
