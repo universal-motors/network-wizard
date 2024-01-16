@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import background from "@/assets/images/bacgroundImage.png";
+// import background from "@/assets/images/bacgroundImage.png";
+import background from "@/assets/images/background2.jpg";
 import gif from "@/assets/images/wizard-gif.gif";
 export default function Herosection() {
   return (
