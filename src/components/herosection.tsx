@@ -44,25 +44,34 @@ export default function Herosection() {
               </div>
               <div className="font-bold">Name</div>
               <div>
-                <input type="text" className="w-[95%] h-10" />
+                <input type="text" className="w-[95%] h-10 text-black pl-4" />
               </div>
               <div className="flex gap-3">
                 <div>
                   <div>Email</div>
                   <div>
-                    <input type="text" className="w-[85%] h-10" />
+                    <input
+                      type="text"
+                      className="w-[85%] h-10  text-black pl-4"
+                    />
                   </div>
                 </div>
                 <div>
                   <div>Phone</div>
                   <div>
-                    <input type="text" className="w-[85%] h-10" />
+                    <input
+                      type="text"
+                      className="w-[85%] h-10 text-black pl-4"
+                    />
                   </div>
                 </div>
                 <div>
                   <div>ZIP Code</div>
                   <div>
-                    <input type="text" className="w-[85%] h-10" />
+                    <input
+                      type="text"
+                      className="w-[85%] h-10 text-black pl-4"
+                    />
                   </div>
                 </div>
               </div>
