@@ -13,7 +13,7 @@ import StarIcon from "@mui/icons-material/Star";
 export default function Internat() {
   return (
     <div>
-      <div className="relative text-[white] w-full h-[580vh] md:h-[380vh] lg:h-[2200px] 2xl:h-[1800px]">
+      <div className="relative text-[white] w-full h-[700vh] md:h-[380vh] lg:h-[2200px] 2xl:h-[1800px]">
         <Image
           src={background}
           style={{
