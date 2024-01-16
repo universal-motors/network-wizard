@@ -28,13 +28,13 @@ export default function Header() {
         </div>
         <div className="flex items-center gap-5 font-bold text-[12px] xl:text-[14px]">
           <div className="!hidden lg:!flex gap-5">
-            <div>Home</div>
-            <div>About Us</div>
-            <div>Contact Us</div>
+            <div className="cursor-pointer">Home</div>
+            <div className="cursor-pointer">About Us</div>
+            <div className="cursor-pointer">Contact Us</div>
             <div className="border h-5 border-[#404040]"></div>
           </div>
 
-          <div className="bg-[#1B8FDE] hover:bg-[#71ACD4] px-3 py-2 text-[10px] sm:text-[14px] rounded-2xl">
+          <div className="bg-[#1B8FDE] hover:bg-[#71ACD4] px-3 py-2 text-[10px] sm:text-[14px] rounded-2xl cursor-pointer">
             Call Us: +1(416)802-2906
           </div>
         </div>

@@ -5,10 +5,15 @@ import gif from "@/assets/images/wizard-gif.gif";
 export default function Herosection() {
   return (
     <div className="flex flex-col text-white w-[100%] ">
-      <div className="relative w-full h-[130vh] lg:h-[90vh] flex flex-col items-center">
+      <div className="relative w-full flex flex-col h-[1010px] sm:h-[990px] lg:h-[750px] items-center">
         <Image
           src={background}
-          style={{ width: "100%", height: "90%", position: "absolute" }}
+          style={{
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            objectFit: "cover",
+          }}
           alt="background"
         />
         <div className="absolute ">
